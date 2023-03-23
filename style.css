@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Charmonman:wght@400;700&family=Dancing+Script:wght@400;600;700&family=Monoton&family=Mr+Dafoe&family=Mrs+Saint+Delafield&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@400;500;700;900&family=Sofia+Sans:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {    
+    background: linear-gradient(to right, #060318, #077e7e);
+    font-size: 1.2rem;
+}
+
+.logo-font {
+    font-family: charmonman, open sans;
+    font-size: 64px;
+    font-weight: 700;
+    color: red;
+    align-self: start;
+    margin: 10px 0 0 20px;
+}
+
+.calculator {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 400px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.calculator-input {
+    width: 100%;
+    font-size: 4rem;
+    height: 70px;
+    border: none;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: #252525;
+    color: #fff;
+    text-align: right;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+button {
+    height: 50px;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #080000;
+    background-color: transparent;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #eaeaea;
+}
+
+.operator {
+    color: #056db3;
+}
+
+.clear {
+    background-color: #b0353a;
+    border-color: #b0353a;
+    color: #fff;
+}
+
+.clear:hover {
+    background-color: #f0595f;
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.equal-sign {
+    background-color: #2e86c0;
+    border-color: #337cac;
+    color: #fff;
+    height: 100%;
+    grid-area: 2/4/6/5;
+}
+
+.equal-sign:hover {
+    background-color: #4e9ed4;
+}
